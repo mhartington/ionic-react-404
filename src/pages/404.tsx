@@ -1,24 +1,25 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Home.css';
 
-const Home: React.FC = () => {
+const Missing: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>Not Found</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
+          <IonTitle size="large">Not Found</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonButton routerLink="foo">Go to bad link</IonButton>
+
+        <h1>Nothing here</h1>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Home;
+export default Missing;
